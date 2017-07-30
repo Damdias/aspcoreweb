@@ -1,0 +1,18 @@
+<h1>{{Students.length}}</h1>
+
+<div >
+    <button (click)='addNew()' class="btn btn-primary" >Add NEW</button>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let student of Students">
+        <td>{{student.id}}</td>   
+        <td>{{student.firstName}}</td>   
+        </tr>
+        
+    </tbody>    
+</table>
+</div>
